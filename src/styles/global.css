@@ -1,6 +1,4 @@
-@import './themes/broadsheet.css';
 @import './themes/technical.css';
-@import './themes/journal.css';
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -58,6 +56,7 @@ main { padding-block: var(--main-pad, 3rem) 4rem; min-height: 60vh; }
 
 .page-kicker { margin: 0 0 0.5rem; font-family: var(--font-ui); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
 .page-title { font-family: var(--font-head); font-size: clamp(2rem, 5vw, 2.75rem); line-height: 1.1; letter-spacing: var(--head-tracking); margin: 0 0 0.5rem; font-weight: var(--head-weight); }
+.page-title + .prose { margin-top: 1.5rem; }
 .page-dek { color: var(--muted); margin: 0 0 2.5rem; font-size: 1.05em; }
 .topic-list { list-style: none; padding: 0; margin: 0; max-width: var(--measure); border-top: 1px solid var(--rule); }
 .topic-list li { display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--rule); font-size: 1.1em; }
