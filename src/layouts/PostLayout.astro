@@ -1,35 +1,59 @@
 ---
+import type { MarkdownHeading } from 'astro';
 import BaseLayout from './BaseLayout.astro';
+import Toc from '../components/Toc.astro';
 import { formatDate, readingTime, type Post } from '../lib/posts';
-import { url } from '../consts';
+import { AUTHOR, url } from '../consts';
 
-interface Props { post: Post }
-const { post } = Astro.props;
+interface Props {
+  post: Post;
+  headings: MarkdownHeading[];
+  prev?: Post;
+  next?: Post;
+}
+const { post, headings, prev, next } = Astro.props;
 const { title, description, pubDate, updatedDate, tags } = post.data;
 ---
-<BaseLayout title={title} description={description} type="article">
-  <article>
-    <header>
-      <h1>{title}</h1>
-      <p class="muted meta">
-        <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
-        {updatedDate && <>{' · updated '}<time datetime={updatedDate.toISOString()}>{formatDate(updatedDate)}</time></>}
-        {' · '}{readingTime(post.body)}
-      </p>
+<BaseLayout title={title} description={description} type="article" wide>
+  <article class="post">
+    <header class="post__header">
       {tags.length > 0 && (
-        <p class="tags">{tags.map((t) => <a class="tag" href={url(`tags/${t}/`)}>#{t}</a>)}</p>
+        <p class="post__kicker">
+          {tags.map((t, i) => <>{i > 0 && ' · '}<a href={url(`tags/${t}/`)}>{t}</a></>)}
+        </p>
       )}
+      <h1 class="post__title">{title}</h1>
+      <p class="post__dek">{description}</p>
+      <p class="post__meta">
+        <span>By {AUTHOR}</span>
+        <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
+        {updatedDate && <span>Updated <time datetime={updatedDate.toISOString()}>{formatDate(updatedDate)}</time></span>}
+        <span>{readingTime(post.body)}</span>
+      </p>
     </header>
-    <div class="prose">
-      <slot />
-    </div>
-  </article>
-  <p><a href={url('/')}>← All posts</a></p>
-</BaseLayout>
 
-<style>
-  article header { margin-bottom: 2.5rem; }
-  .meta { margin: 0 0 0.6rem; font-size: 0.95rem; }
-  .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; }
-  .prose :global(h2:first-child) { margin-top: 0; }
-</style>
+    <div class="post__grid">
+      <aside class="post__aside">
+        <Toc headings={headings} />
+      </aside>
+      <div class="prose">
+        <slot />
+      </div>
+    </div>
+
+    <nav class="post-nav" aria-label="More posts">
+      {next ? (
+        <a class="post-nav__link" href={url(`blog/${next.id}/`)}>
+          <span class="post-nav__label">Newer</span>
+          <span class="post-nav__title">{next.data.title}</span>
+        </a>
+      ) : <span />}
+      {prev && (
+        <a class="post-nav__link post-nav__link--prev" href={url(`blog/${prev.id}/`)}>
+          <span class="post-nav__label">Older</span>
+          <span class="post-nav__title">{prev.data.title}</span>
+        </a>
+      )}
+    </nav>
+  </article>
+</BaseLayout>

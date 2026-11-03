@@ -8,8 +8,23 @@ export async function getPosts(): Promise<Post[]> {
   return posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 }
 
-export function formatDate(date: Date) {
-  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+/** Posts grouped by year, newest year first. */
+export function byYear(posts: Post[]): [number, Post[]][] {
+  const groups = new Map<number, Post[]>();
+  for (const p of posts) {
+    const y = p.data.pubDate.getUTCFullYear();
+    groups.set(y, [...(groups.get(y) ?? []), p]);
+  }
+  return [...groups];
+}
+
+export function formatDate(date: Date, style: 'long' | 'short' = 'long') {
+  return date.toLocaleDateString('en-US', {
+    year: style === 'long' ? 'numeric' : undefined,
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  });
 }
 
 export function readingTime(body = '') {

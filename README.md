@@ -44,7 +44,9 @@ One-time setup: in the repo on GitHub, go to **Settings → Pages** and set **So
 
 ## Customizing
 
-- Site name, description, author: `src/consts.ts`
+- Site name, tagline, author: `src/consts.ts`
+- Home page intro text: `src/pages/index.astro`
 - About page: `src/pages/about.md`
-- Colors and typography: `src/styles/global.css`
+- Colors, fonts and theme-specific styling: `src/styles/themes/technical.css` (light and dark palettes are at the top)
+- Layout shared by all pages: `src/styles/global.css`
 - Custom domain: add it under Settings → Pages, then in `astro.config.mjs` set `SITE` to your domain and `BASE` to `'/'`.

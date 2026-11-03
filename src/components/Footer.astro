@@ -1,16 +1,13 @@
 ---
-import { AUTHOR } from '../consts';
+import { AUTHOR, SITE_TITLE, url } from '../consts';
 ---
-<footer class="wrap muted">
-  © {new Date().getFullYear()} {AUTHOR} · Built with <a href="https://astro.build">Astro</a>
+<footer class="site-footer">
+  <div class="wrap wide site-footer__inner">
+    <p><strong>{SITE_TITLE}</strong> · © {new Date().getFullYear()} {AUTHOR}</p>
+    <p class="site-footer__links">
+      <a href={url('rss.xml')}>RSS</a>
+      <a href={url('tags/')}>Topics</a>
+      <a href={url('about/')}>About</a>
+    </p>
+  </div>
 </footer>
-
-<style>
-  footer {
-    margin-top: 5rem;
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
-    border-top: 1px solid var(--border);
-    font-size: 0.9rem;
-  }
-</style>

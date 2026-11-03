@@ -8,14 +8,12 @@ const counts = new Map<string, number>();
 for (const p of posts) for (const t of p.data.tags) counts.set(t, (counts.get(t) ?? 0) + 1);
 const tags = [...counts].sort((a, b) => a[0].localeCompare(b[0]));
 ---
-<BaseLayout title="Tags">
-  <h1>Tags</h1>
-  <p class="tags">
-    {tags.map(([t, n]) => <a class="tag" href={url(`tags/${t}/`)}>#{t} <span>{n}</span></a>)}
-  </p>
+<BaseLayout title="Topics">
+  <h1 class="page-title">Topics</h1>
+  <p class="page-dek">Every post is filed under one or more topics.</p>
+  <ul class="topic-list">
+    {tags.map(([t, n]) => (
+      <li><a href={url(`tags/${t}/`)}>{t}</a> <span class="count">{n} {n === 1 ? 'post' : 'posts'}</span></li>
+    ))}
+  </ul>
 </BaseLayout>
-
-<style>
-  .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .tag { font-size: 0.95rem; }
-</style>

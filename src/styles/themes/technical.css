@@ -1,0 +1,66 @@
+/* Technical — crisp documentation style. Sans body, mono details, sidebar contents. */
+[data-theme='technical'] {
+  --font-body: 'IBM Plex Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-head: 'IBM Plex Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-ui: 'IBM Plex Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --size: 1.0625rem;
+  --leading: 1.7;
+  --measure: 43rem;
+  --list: 50rem;
+  --wide: 72rem;
+  --radius: 6px;
+  --head-weight: 600;
+  --head-tracking: -0.01em;
+  --main-pad: 3.5rem;
+
+  --bg: #ffffff;
+  --surface: #f6f8fa;
+  --fg: #16191d;
+  --fg-soft: #3b424b;
+  --muted: #5f6873;
+  --rule: #e3e7ec;
+  --rule-strong: #c9d0d8;
+  --accent: #0b5cad;
+  --accent-hover: #084a8c;
+  --code-bg: #f3f5f8;
+  --select: #cfe3fb;
+}
+@media (prefers-color-scheme: dark) {
+  [data-theme='technical'] {
+    --bg: #0e1116; --surface: #151a21; --fg: #e3e8ee; --fg-soft: #c3cbd5; --muted: #8b95a1;
+    --rule: #232a33; --rule-strong: #343d48; --accent: #6cb0ff; --accent-hover: #94c6ff;
+    --code-bg: #161b22; --select: #1d3b5f;
+  }
+}
+
+[data-theme='technical'] .site-header { background: var(--surface); border-bottom: 1px solid var(--rule); }
+[data-theme='technical'] .site-header__inner { align-items: center; padding-block: 1rem; }
+[data-theme='technical'] .masthead { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.25rem 1rem; }
+[data-theme='technical'] .site-title { font-weight: 650; font-size: 1.1rem; letter-spacing: -0.01em; }
+[data-theme='technical'] .site-title::before { content: '/'; font-family: var(--font-mono); color: var(--accent); margin-right: 0.35rem; font-weight: 500; }
+[data-theme='technical'] .site-tagline { margin: 0; font-size: 0.82rem; }
+[data-theme='technical'] .site-nav { font-size: 0.875rem; font-weight: 500; }
+[data-theme='technical'] .site-nav a[aria-current='page'] { box-shadow: none; color: var(--accent); }
+
+[data-theme='technical'] .intro__lead { font-size: 1.3em; font-weight: 400; letter-spacing: -0.01em; }
+[data-theme='technical'] .post-year__label,
+[data-theme='technical'] .post-item__date,
+[data-theme='technical'] .post__meta,
+[data-theme='technical'] .post__kicker,
+[data-theme='technical'] .post-nav__label,
+[data-theme='technical'] .toc__title { font-family: var(--font-mono); }
+[data-theme='technical'] .post-item__date { font-size: 0.8rem; }
+[data-theme='technical'] .post-item__title { font-size: 1.2em; }
+[data-theme='technical'] .tag { font-family: var(--font-mono); font-size: 0.74rem; background: var(--surface); }
+[data-theme='technical'] .tag::before { content: '#'; color: var(--muted); }
+
+[data-theme='technical'] .post__title { font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.15; }
+[data-theme='technical'] .post__dek { font-size: 1.15em; }
+[data-theme='technical'] .post__meta { font-size: 0.8rem; }
+[data-theme='technical'] .prose h2 { font-size: 1.45em; padding-bottom: 0.35em; border-bottom: 1px solid var(--rule); }
+[data-theme='technical'] .prose h3 { font-size: 1.15em; }
+[data-theme='technical'] .prose blockquote { background: var(--surface); border-left-color: var(--accent); padding: 0.75em 1em; border-radius: 0 var(--radius) var(--radius) 0; color: var(--fg-soft); }
+[data-theme='technical'] .prose thead th { border-bottom: 1px solid var(--rule-strong); background: var(--surface); padding-left: 0.75em; }
+[data-theme='technical'] .prose td { padding-left: 0.75em; }
+[data-theme='technical'] .toc a { display: block; }

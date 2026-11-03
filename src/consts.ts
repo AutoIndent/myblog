@@ -1,6 +1,10 @@
-export const SITE_TITLE = 'My Blog';
-export const SITE_DESCRIPTION = 'Notes, ideas and things I am learning.';
-export const AUTHOR = 'AutoIndent';
+export const SITE_TITLE = "Auto Indent's Blog";
+export const SITE_TAGLINE = 'Notes on software, tools and the things I am learning.';
+export const SITE_DESCRIPTION = SITE_TAGLINE;
+export const AUTHOR = 'Auto Indent';
+
+/** Visual theme, defined in src/styles/themes/technical.css. */
+export const THEME = 'technical';
 
 /** Prefix a site-relative path with the configured base (needed on GitHub Pages). */
 export function url(path = '') {
