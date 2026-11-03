@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+import { getPosts } from '../lib/posts';
+import { SITE_DESCRIPTION } from '../consts';
+
+const posts = await getPosts();
+---
+<BaseLayout>
+  <p class="intro muted">{SITE_DESCRIPTION}</p>
+  {posts.length ? <PostList posts={posts} /> : <p>No posts yet.</p>}
+</BaseLayout>
+
+<style>
+  .intro { font-size: 1.15rem; margin-bottom: 3rem; }
+</style>
