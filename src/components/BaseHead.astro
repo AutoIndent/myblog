@@ -1,5 +1,6 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION, url } from '../consts';
+import '../styles/fonts.css';
 import '../styles/global.css';
 
 interface Props {
@@ -22,7 +23,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 <meta name="generator" content={Astro.generator} />
 
 <meta property="og:type" content={type} />
-<meta property="og:title" content={fullTitle} />
+<meta property="og:site_name" content={SITE_TITLE} />
+<meta property="og:title" content={title ?? SITE_TITLE} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta name="twitter:card" content="summary" />

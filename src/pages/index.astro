@@ -2,15 +2,22 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostList from '../components/PostList.astro';
 import { getPosts } from '../lib/posts';
-import { SITE_DESCRIPTION } from '../consts';
+import { url } from '../consts';
 
 const posts = await getPosts();
+const tags = [...new Set(posts.flatMap((p) => p.data.tags))].sort();
 ---
 <BaseLayout>
-  <p class="intro muted">{SITE_DESCRIPTION}</p>
+  <section class="intro">
+    <p class="intro__lead">
+      Long-form notes on software, tooling and the craft of building things — written down so I understand them better.
+    </p>
+    {tags.length > 0 && (
+      <p class="intro__topics">
+        <span class="intro__label">Topics</span>
+        {tags.map((t) => <a class="tag" href={url(`tags/${t}/`)}>{t}</a>)}
+      </p>
+    )}
+  </section>
   {posts.length ? <PostList posts={posts} /> : <p>No posts yet.</p>}
 </BaseLayout>
-
-<style>
-  .intro { font-size: 1.15rem; margin-bottom: 3rem; }
-</style>

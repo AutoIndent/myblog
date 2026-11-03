@@ -5,12 +5,15 @@ import { getPosts, type Post } from '../../lib/posts';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
-  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+  return posts.map((post, i) => ({
+    params: { slug: post.id },
+    props: { post, next: posts[i - 1], prev: posts[i + 1] },
+  }));
 }
 
-const { post } = Astro.props as { post: Post };
-const { Content } = await render(post);
+const { post, prev, next } = Astro.props as { post: Post; prev?: Post; next?: Post };
+const { Content, headings } = await render(post);
 ---
-<PostLayout post={post}>
+<PostLayout post={post} headings={headings} prev={prev} next={next}>
   <Content />
 </PostLayout>

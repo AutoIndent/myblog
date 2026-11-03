@@ -3,6 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { url } from '../consts';
 ---
 <BaseLayout title="Not found">
-  <h1>Page not found</h1>
-  <p>That page doesn't exist. <a href={url('/')}>Back to the posts</a>.</p>
+  <h1 class="page-title">Page not found</h1>
+  <p class="page-dek">That page doesn't exist. <a href={url('/')}>Back to all writing</a>.</p>
 </BaseLayout>

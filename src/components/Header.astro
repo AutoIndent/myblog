@@ -1,32 +1,24 @@
 ---
-import { SITE_TITLE, url } from '../consts';
+import { SITE_TITLE, SITE_TAGLINE, url } from '../consts';
 
 const links = [
-  { href: url('/'), label: 'Posts' },
-  { href: url('tags/'), label: 'Tags' },
-  { href: url('about/'), label: 'About' },
-  { href: url('rss.xml'), label: 'RSS' },
+  { href: url('/'), label: 'Writing', match: (p: string) => p === url('/') || p.startsWith(url('blog')) },
+  { href: url('tags/'), label: 'Topics', match: (p: string) => p.startsWith(url('tags')) },
+  { href: url('about/'), label: 'About', match: (p: string) => p.startsWith(url('about')) },
 ];
+const path = Astro.url.pathname;
 ---
-<header class="wrap">
-  <a class="brand" href={url('/')}>{SITE_TITLE}</a>
-  <nav>
-    {links.map((l) => <a href={l.href}>{l.label}</a>)}
-  </nav>
+<header class="site-header">
+  <div class="wrap wide site-header__inner">
+    <div class="masthead">
+      <a class="site-title" href={url('/')}>{SITE_TITLE}</a>
+      <p class="site-tagline">{SITE_TAGLINE}</p>
+    </div>
+    <nav class="site-nav" aria-label="Main">
+      {links.map((l) => (
+        <a href={l.href} aria-current={l.match(path) ? 'page' : undefined}>{l.label}</a>
+      ))}
+      <a href={url('rss.xml')} class="rss" title="RSS feed">RSS</a>
+    </nav>
+  </div>
 </header>
-
-<style>
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1.5rem;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-top: 2.5rem;
-    padding-bottom: 3rem;
-  }
-  .brand { font-weight: 700; font-size: 1.15rem; color: var(--fg); text-decoration: none; }
-  nav { display: flex; gap: 1.1rem; }
-  nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
-  nav a:hover { color: var(--accent); }
-</style>

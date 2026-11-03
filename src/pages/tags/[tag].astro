@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostList from '../../components/PostList.astro';
 import { getPosts, type Post } from '../../lib/posts';
+import { url } from '../../consts';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -15,7 +16,9 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props as { posts: Post[] };
 ---
-<BaseLayout title={`#${tag}`}>
-  <h1>#{tag}</h1>
-  <PostList posts={posts} />
+<BaseLayout title={tag}>
+  <p class="page-kicker"><a href={url('tags/')}>Topics</a></p>
+  <h1 class="page-title">{tag}</h1>
+  <p class="page-dek">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
+  <PostList posts={posts} group={false} />
 </BaseLayout>
