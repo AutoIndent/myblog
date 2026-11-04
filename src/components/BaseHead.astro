@@ -7,8 +7,10 @@ interface Props {
   title?: string;
   description?: string;
   type?: 'website' | 'article';
+  /** Absolute URL of a preview image for social sharing. */
+  image?: string;
 }
-const { title, description = SITE_DESCRIPTION, type = 'website' } = Astro.props;
+const { title, description = SITE_DESCRIPTION, type = 'website', image } = Astro.props;
 const fullTitle = title ? `${title} · ${SITE_TITLE}` : SITE_TITLE;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -27,4 +29,5 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 <meta property="og:title" content={title ?? SITE_TITLE} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
-<meta name="twitter:card" content="summary" />
+{image && <meta property="og:image" content={image} />}
+<meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />

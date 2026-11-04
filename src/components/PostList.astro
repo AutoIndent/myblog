@@ -1,6 +1,7 @@
 ---
 import { byYear, formatDate, readingTime, type Post } from '../lib/posts';
 import { url } from '../consts';
+import { Image } from 'astro:assets';
 
 interface Props { posts: Post[]; group?: boolean }
 const { posts, group = true } = Astro.props;
@@ -12,7 +13,7 @@ const groups = group ? byYear(posts) : [[null, posts] as const];
       {year && <h2 class="post-year__label">{year}</h2>}
       <ol class="post-list">
         {list.map((post) => (
-          <li class="post-item">
+          <li class:list={['post-item', { 'post-item--cover': post.data.cover }]}>
             <time class="post-item__date" datetime={post.data.pubDate.toISOString()}>
               {formatDate(post.data.pubDate, group ? 'short' : 'long')}
             </time>
@@ -27,6 +28,11 @@ const groups = group ? byYear(posts) : [[null, posts] as const];
                 {post.data.tags.map((t) => <a class="tag" href={url(`tags/${t}/`)}>{t}</a>)}
               </p>
             </div>
+            {post.data.cover && (
+              <a class="post-item__thumb" href={url(`blog/${post.id}/`)} tabindex="-1" aria-hidden="true">
+                <Image src={post.data.cover.image} alt="" widths={[240, 480]} sizes="12rem" />
+              </a>
+            )}
           </li>
         ))}
       </ol>

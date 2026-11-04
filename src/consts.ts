@@ -1,7 +1,7 @@
-export const SITE_TITLE = "Auto Indent's Blog";
+export const SITE_TITLE = "AutoIndent's Blog";
 export const SITE_TAGLINE = 'Notes on software, tools and the things I am learning.';
 export const SITE_DESCRIPTION = SITE_TAGLINE;
-export const AUTHOR = 'Auto Indent';
+export const AUTHOR = 'AutoIndent';
 
 /** Visual theme, defined in src/styles/themes/technical.css. */
 export const THEME = 'technical';
