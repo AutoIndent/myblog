@@ -8,6 +8,7 @@ interface Props {
   title?: string;
   description?: string;
   type?: 'website' | 'article';
+  image?: string;
   wide?: boolean;
 }
 const { wide = false, ...head } = Astro.props;

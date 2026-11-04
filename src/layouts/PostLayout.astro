@@ -1,5 +1,6 @@
 ---
 import type { MarkdownHeading } from 'astro';
+import { Image, getImage } from 'astro:assets';
 import BaseLayout from './BaseLayout.astro';
 import Toc from '../components/Toc.astro';
 import { formatDate, readingTime, type Post } from '../lib/posts';
@@ -12,9 +13,12 @@ interface Props {
   next?: Post;
 }
 const { post, headings, prev, next } = Astro.props;
-const { title, description, pubDate, updatedDate, tags } = post.data;
+const { title, description, pubDate, updatedDate, tags, cover } = post.data;
+const ogImage = cover
+  ? new URL((await getImage({ src: cover.image, width: 1200, format: 'jpeg' })).src, Astro.site).href
+  : undefined;
 ---
-<BaseLayout title={title} description={description} type="article" wide>
+<BaseLayout title={title} description={description} type="article" image={ogImage} wide>
   <article class="post">
     <header class="post__header">
       {tags.length > 0 && (
@@ -31,6 +35,30 @@ const { title, description, pubDate, updatedDate, tags } = post.data;
         <span>{readingTime(post.body)}</span>
       </p>
     </header>
+
+    {cover && (
+      <figure class="post__cover figure">
+        <Image
+          src={cover.image}
+          alt={cover.alt}
+          widths={[640, 1000, 1400, 2000]}
+          sizes="(min-width: 72rem) 69.5rem, 100vw"
+          loading="eager"
+          fetchpriority="high"
+        />
+        {(cover.caption || cover.credit) && (
+          <figcaption>
+            {cover.caption && <span class="figure__caption">{cover.caption}</span>}
+            {cover.credit && (
+              <span class="figure__credit">
+                Photo: {cover.source ? <a href={cover.source}>{cover.credit}</a> : cover.credit}
+                {cover.license && <>, {cover.licenseUrl ? <a href={cover.licenseUrl}>{cover.license}</a> : cover.license}</>}
+              </span>
+            )}
+          </figcaption>
+        )}
+      </figure>
+    )}
 
     <div class="post__grid">
       <aside class="post__aside">
