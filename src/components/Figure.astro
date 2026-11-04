@@ -1,0 +1,38 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: ImageMetadata;
+  alt: string;
+  caption?: string;
+  /** Photographer / author name. */
+  credit?: string;
+  /** Link to the original file page (e.g. on Wikimedia Commons). */
+  source?: string;
+  license?: string;
+  licenseUrl?: string;
+}
+const { src, alt, caption, credit, source, license, licenseUrl } = Astro.props;
+---
+<figure class="figure">
+  <Image
+    src={src}
+    alt={alt}
+    widths={[480, 800, 1200, 1600]}
+    sizes="(min-width: 50rem) 43rem, 100vw"
+    loading="lazy"
+    decoding="async"
+  />
+  {(caption || credit) && (
+    <figcaption>
+      {caption && <span class="figure__caption">{caption}</span>}
+      {credit && (
+        <span class="figure__credit">
+          Photo: {source ? <a href={source}>{credit}</a> : credit}
+          {license && <>, {licenseUrl ? <a href={licenseUrl}>{license}</a> : license}</>}
+        </span>
+      )}
+    </figcaption>
+  )}
+</figure>

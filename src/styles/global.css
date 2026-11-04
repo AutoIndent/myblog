@@ -159,3 +159,11 @@ main { padding-block: var(--main-pad, 3rem) 4rem; min-height: 60vh; }
 @media (prefers-color-scheme: dark) {
   .astro-code, .astro-code span { background-color: var(--shiki-dark-bg) !important; color: var(--shiki-dark) !important; }
 }
+
+/* ---------- Figures ---------- */
+.prose .figure { margin: 2em 0; }
+.prose .figure img { display: block; width: 100%; height: auto; border-radius: var(--radius); background: var(--surface); }
+.figure figcaption { margin-top: 0.6rem; font-family: var(--font-ui); font-size: 0.82rem; line-height: 1.5; color: var(--muted); }
+.figure__caption { color: var(--fg-soft, var(--muted)); }
+.figure__caption + .figure__credit::before { content: ' · '; }
+.figure__credit, .figure__credit a { color: var(--muted); }

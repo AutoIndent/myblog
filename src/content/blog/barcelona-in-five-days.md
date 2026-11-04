@@ -1,0 +1,155 @@
+---
+title: Barcelona in five days
+description: A day-by-day plan covering Gaudí, the Gothic Quarter, Montjuïc and the sea, plus the Catalan dishes worth seeking out at every stop.
+pubDate: 2026-11-03
+tags: [travel, barcelona, food]
+---
+
+Five days is enough to see Barcelona's big sights without rushing, and to eat well while doing it. This plan groups each day by neighbourhood so you spend your time walking streets, not riding the metro back and forth. Every day ends with what to eat nearby, because in Barcelona the food is half the reason to go.
+
+## Before you go
+
+**Book ahead.** The Sagrada Família, Park Güell, Casa Batlló and Casa Milà all use timed tickets and sell out, often days in advance in high season. Buy them on the official sites as soon as your dates are fixed, then build the rest of the plan around those time slots.
+
+**Eat on local time.** Lunch is the main meal and runs roughly 1:30–4 pm. Dinner rarely starts before 9 pm. On weekdays, look for a *menú del día*: a fixed-price lunch with a starter, main, dessert and a drink. It's the best-value way to eat well.
+
+**Getting around.** The old town and Eixample are walkable. For everything else, the metro is fast; a multi-trip card (such as the T-casual, 10 journeys) is cheaper than single tickets. The airport metro stations need a separate airport ticket, so the Aerobús is often simpler.
+
+**Watch your pockets.** Pickpocketing is common on La Rambla, in the metro and on the beach. Keep your phone out of back pockets and bags zipped and in front of you.
+
+**Speak a little Catalan.** Spanish works everywhere, but *bon dia* (good morning), *si us plau* (please) and *gràcies* (thank you) go a long way.
+
+## Day 1: Gothic Quarter and El Born
+
+Start in the oldest part of the city, where Roman walls and medieval lanes are still the street plan.
+
+**Morning**
+- **Barcelona Cathedral** and its cloister, home to a flock of thirteen geese. Go early, before the tour groups.
+- **Plaça del Rei** and **Plaça de Sant Felip Neri**, a quiet square whose walls still show damage from bombing in the Civil War.
+- Walk the lanes around **Carrer del Bisbe**, with its neo-Gothic bridge.
+
+**Afternoon**
+- Cross Via Laietana into **El Born**. Visit **Santa Maria del Mar**, a 14th-century Catalan Gothic church built by and for the neighbourhood's sailors and dockworkers. It's plainer and, many argue, more beautiful than the cathedral.
+- The **Picasso Museum** on Carrer de Montcada focuses on his early years and his long connection to the city. Book a time slot.
+- Browse **Mercat de Santa Caterina**, with its wavy, multicoloured roof.
+
+**Where to eat**
+
+Start the evening with *vermut* (vermouth on ice with an orange slice and an olive), the Catalan pre-dinner ritual, then move on to tapas in El Born:
+- *Pa amb tomàquet*: bread rubbed with ripe tomato, olive oil and salt. It comes with almost everything.
+- *Jamón ibérico* and Catalan cured sausages like *fuet*.
+- *Croquetes* of ham or salt cod.
+- *Pebrots de Padrón*: blistered small green peppers. Most are mild; the odd one is hot.
+
+For an afternoon treat, **Carrer de Petritxol** near Plaça del Pi has old *granjas* (milk bars) serving thick hot chocolate with *xurros* or *melindros* (sponge fingers).
+
+## Day 2: Gaudí and the Eixample
+
+Today is modernisme: the Catalan take on Art Nouveau, and the reason the city looks the way it does.
+
+**Morning**
+- **Sagrada Família.** Take the earliest time slot you can get, when the light through the stained glass is strongest. Construction began in 1882 and is still going; the audio guide explains the symbolism on each façade. Tower access is a separate ticket.
+- Walk up Avinguda de Gaudí to the **Hospital de la Santa Creu i Sant Pau**, a former hospital by Lluís Domènech i Montaner. It's a full campus of tiled pavilions and gardens, and far less crowded than the Gaudí sites.
+
+**Afternoon**
+- Head to **Passeig de Gràcia**, the grand avenue of the Eixample.
+- **Casa Batlló**: Gaudí's house of bones and scales, with a rooftop shaped like a dragon's back.
+- **Casa Milà (La Pedrera)**: a wave of stone whose chimney-filled rooftop alone is worth the ticket.
+- On the block between Consell de Cent and Aragó, compare **Casa Amatller** and **Casa Lleó Morera**. Locals call this stretch the *Manzana de la Discordia*, the "block of discord", because the three architects' styles clash so openly.
+
+**Where to eat**
+
+For lunch, find a *menú del día* on a side street off Passeig de Gràcia. For dinner, the Eixample's tapas bars are a good place to try:
+- *Patatas bravas*: fried potatoes, served in Barcelona with both a spicy red sauce and garlic *allioli*.
+- *Bikini*: Barcelona's name for a pressed ham-and-cheese toastie.
+- *Escalivada*: smoky roasted peppers, aubergine and onion in olive oil.
+- *Esqueixada*: a salad of shredded salt cod with tomato, onion and olives.
+
+## Day 3: Park Güell and Gràcia
+
+A morning of views, then an afternoon in the neighbourhood that still feels like a separate village.
+
+**Morning**
+- **Park Güell.** The monumental zone (the mosaic lizard, the serpentine bench and the gingerbread-like gatehouses) needs a timed ticket. Go early. The rest of the park is free to walk.
+- If you have energy, walk up to the **Bunkers del Carmel**, Civil War anti-aircraft emplacements with a 360° view of the city and the sea. Bring water; there's little shade.
+
+**Afternoon**
+- Walk downhill into **Gràcia**. It was a separate town until 1897, and it shows in the small squares where neighbours gather: **Plaça del Sol**, **Plaça de la Virreina** and **Plaça de la Vila de Gràcia**, with its clock tower.
+- Look up **Casa Vicens**, Gaudí's first major house, covered in green and white tiles.
+
+**Evening**
+- Book a concert or a guided tour at the **Palau de la Música Catalana**, back in the old town. Its stained-glass skylight is one of the most striking rooms in Europe.
+
+**Where to eat**
+
+Gràcia has relaxed, local restaurants. This is a good night for traditional Catalan cooking:
+- *Botifarra amb mongetes*: grilled Catalan pork sausage with white beans.
+- *Fricandó*: veal stewed with wild mushrooms.
+- *Canelons*: Catalan cannelloni filled with roast meat and topped with béchamel.
+- For dessert, *crema catalana*, with its burnt sugar crust, or *mel i mató*: fresh cheese with honey.
+
+## Day 4: Montjuïc
+
+The hill above the port holds gardens, museums, a castle and the 1992 Olympic grounds.
+
+**Morning**
+- Ride the funicular from Paral·lel metro station, then the cable car up to **Montjuïc Castle** for views over the port.
+- **Fundació Joan Miró**: a white, light-filled building by Josep Lluís Sert holding the city's best collection of Miró.
+
+**Afternoon**
+- **MNAC** (Museu Nacional d'Art de Catalunya), in the palace at the top of the grand steps. Don't skip the Romanesque collection: whole church apses with their 12th-century frescoes, rescued from Pyrenean villages.
+- Walk down the steps past the **Magic Fountain**. Its evening light-and-music shows run on a changing schedule (and have been paused in droughts), so check before you plan around them.
+- Optional: **Poble Espanyol**, an open-air "village" of buildings from across Spain, built for the 1929 International Exposition.
+
+**Where to eat**
+
+Walk down into **Poble-sec**. **Carrer de Blai** is lined with bars serving *pintxos*, small bites on bread pinned with a toothpick and priced per stick. Order a few at a time and keep the toothpicks; that's how the bill is counted. Other things to try nearby:
+- *Calamars a la romana* (fried squid rings) and *pop a la gallega* (Galician octopus with paprika).
+- *Bombes* (see Day 5), if you can't wait.
+
+## Day 5: La Boqueria and the sea
+
+Finish with a market, the old fishermen's quarter and an afternoon by the water.
+
+**Morning**
+- **Mercat de la Boqueria** off La Rambla. Go early on a weekday; it's closed on Sundays and crushed by midday. Eat at one of the counter bars rather than buying pre-cut fruit cups. Grilled seafood or eggs with baby squid at the counter is a classic breakfast.
+- Walk La Rambla down to the **Columbus monument**, then along **Port Vell**.
+
+**Afternoon**
+- **Barceloneta** is the old fishermen's neighbourhood: a grid of narrow streets with laundry hanging from the balconies. It's the place for the seafood lunch of the trip.
+- Spend the afternoon on the beach, or walk the seafront promenade north toward the **Olympic Port**.
+- If you'd rather have green than sand, **Parc de la Ciutadella** has a large boating lake and the ornate **Cascada** fountain.
+
+**Where to eat**
+
+Seafood rice is a lunch dish here; locals don't eat it at night. Choose places that cook it to order, and avoid any with photos of paella on a board outside.
+- *Arròs negre*: rice cooked black with squid ink, served with *allioli*.
+- *Fideuà*: like paella, but made with short, thin noodles instead of rice.
+- *Arròs a la marinera*: seafood rice, the Catalan cousin of Valencian paella.
+- *Suquet de peix*: a fishermen's stew of fish and potatoes.
+- *Bombes*: fried balls of mashed potato and spiced meat, topped with *allioli* and hot sauce. They were invented in Barceloneta and are still best there.
+- Toast the last evening with *cava*, Catalonia's sparkling wine, made in the Penedès region just outside the city.
+
+## Seasonal dishes worth catching
+
+| Dish | What it is | When |
+| --- | --- | --- |
+| *Calçots* with *romesco* | Long sweet onions charred on a grill, dipped in a nut-and-pepper sauce. Eaten at a *calçotada* feast | January–April |
+| *Escudella i carn d'olla* | Hearty stew of meats, vegetables and pasta | Winter |
+| *Panellets* | Small marzipan cakes rolled in pine nuts | Around 1 November |
+| *Coca de Sant Joan* | Sweet flatbread with candied fruit and pine nuts | 23 June |
+| *Bunyols* | Small fried doughnuts | Lent |
+
+## If you have a sixth day
+
+**Montserrat** is about an hour away by train: a Benedictine monastery set among strange, saw-toothed peaks, with hiking trails and a famous boys' choir. Trains leave from Plaça d'Espanya; buy a combined ticket that includes the cable car or rack railway up the mountain.
+
+## Final tips
+
+- **Sundays are quiet.** Many shops and La Boqueria are closed, but most museums and sights stay open.
+- **Tap water is safe** to drink, though many people prefer bottled for the taste.
+- **Tipping is modest.** Rounding up or leaving 5–10% for good service at a sit-down meal is plenty.
+- **Dress for churches.** The Sagrada Família and the cathedral expect covered shoulders, and no beachwear.
+- **Prices and opening hours change.** Check the official site of each sight before you go.
+
+*Bon viatge!*
