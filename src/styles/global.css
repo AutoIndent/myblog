@@ -37,8 +37,6 @@ main { padding-block: var(--main-pad, 3rem) 4rem; min-height: 60vh; }
 .site-footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem; padding-block: 2rem 3rem; }
 .site-footer p { margin: 0; }
 .site-footer strong { color: var(--fg); font-weight: 600; }
-.site-footer a { color: var(--muted); }
-.site-footer__links { display: flex; gap: 1.25rem; }
 
 /* ---------- Shared bits ---------- */
 .tag {

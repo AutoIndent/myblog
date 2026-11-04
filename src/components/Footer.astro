@@ -1,13 +1,8 @@
 ---
-import { AUTHOR, SITE_TITLE, url } from '../consts';
+import { AUTHOR, SITE_TITLE } from '../consts';
 ---
 <footer class="site-footer">
   <div class="wrap wide site-footer__inner">
     <p><strong>{SITE_TITLE}</strong> · © {new Date().getFullYear()} {AUTHOR}</p>
-    <p class="site-footer__links">
-      <a href={url('rss.xml')}>RSS</a>
-      <a href={url('tags/')}>Topics</a>
-      <a href={url('about/')}>About</a>
-    </p>
   </div>
 </footer>
